@@ -1,7 +1,7 @@
 
 import { Card } from 'react-bootstrap';
 
-export const CardItem = ({title,subtitle,date,image}) => {
+export const CardItem = ({title,subtitle,date,image,author}) => {
 
 
     return (
@@ -10,13 +10,14 @@ export const CardItem = ({title,subtitle,date,image}) => {
               <Card.Header
                 className="d-flex flex-row">
                 <img
-                  src={'https://via.placeholder.com/150'}
+                  // src={'https://via.placeholder.com/150'}
+                  src={author.avatar}
                   className="rounded-circle mr-3"
                   height="50px"
                   width="50px"
                   alt="avatar"/>
                 <div>
-                  <Card.Title className="font-weight-bold mb-1">Placeholder Author</Card.Title>
+                  <Card.Title className="font-weight-bold mb-1">{author.username}</Card.Title>
                   <Card.Text className="card-date">{date}</Card.Text>
                 </div>
               </Card.Header>
