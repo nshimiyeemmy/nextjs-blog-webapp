@@ -17,7 +17,7 @@ export const CardItem = ({title,subtitle,date,image,author}) => {
                   width="50px"
                   alt="avatar"/>
                 <div>
-                  <Card.Title className="font-weight-bold mb-1">{author?.username || 'Guest'}</Card.Title>
+                  <Card.Title className="font-weight-bold mb-1">{author?.username || 'Guest Author'}</Card.Title>
                   <Card.Text className="card-date">{date}</Card.Text>
                 </div>
               </Card.Header>
