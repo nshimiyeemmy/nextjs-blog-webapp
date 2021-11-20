@@ -155,16 +155,17 @@ html, body {
       }
       &-link {
         color: black;
+        font-weight: 400;
         letter-spacing: 0.8px;
         font-size: 18px;
         text-transform: capitalize;
   
         &.active {
-        color: #dba919;
+        color:#007bff;
         }
   
         &:hover, &:focus {
-          color: #dba919;
+          color:#007bff;
         }
       }
     }
