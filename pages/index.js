@@ -20,6 +20,7 @@ export default function index({Blogs}){
         { Blogs.map(blog =>
         <Col key={blog.CurrentSlugs} md="4">
           <CardItem
+          author={blog.author}
           title={blog.title}
           subtitle={blog.subtitle}
           date={blog.date}
