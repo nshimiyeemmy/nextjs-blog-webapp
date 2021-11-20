@@ -1,7 +1,9 @@
 
-import { Card } from 'react-bootstrap'
+import { Card } from 'react-bootstrap';
 
-export const CardItem = ({title,subtitle}) => {
+export const CardItem = ({title,subtitle,date,image}) => {
+
+
     return (
         <Card className={`fj-card`}>
             <div className="card-body-wrapper">
@@ -15,12 +17,13 @@ export const CardItem = ({title,subtitle}) => {
                   alt="avatar"/>
                 <div>
                   <Card.Title className="font-weight-bold mb-1">Placeholder Author</Card.Title>
-                  <Card.Text className="card-date">Placeholder Date</Card.Text>
+                  <Card.Text className="card-date">{date}</Card.Text>
                 </div>
               </Card.Header>
               <div className="view overlay">
                 <Card.Img
-                  src='https://via.placeholder.com/250'
+                  // src={'https://via.placeholder.com/250'}
+                  src={image}
                   alt="Card image cap"
                 />
               </div>
