@@ -16,9 +16,9 @@ export const AuthorIntro = () => {
               alt="Generic placeholder"
             />
             <Media.Body>
-              <h5 className="font-weight-bold mb-0">Hello👋 Awesome People,</h5>
+              <h5 className="mb-0"><span className="font-weight-bold">Hello</span><span aria-hidden="true" role="img">👋 </span><span className="font-weight-bold">Awesome People,</span></h5>
               <p className="welcome-text" style={{paddingTop:"15px"}}>
-              I'm Emmy Nshimiye based in Rwanda and I am an experienced software developer and freelancer,
+              I'm <span className="font-weight-bold">Emmy Nshimiye</span> based in Rwanda and am an experienced software developer and freelancer,
                 I write daily development tips for you,so that we can learn something new or refresh something every single day!.
               </p>
             </Media.Body>
