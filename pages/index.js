@@ -1,7 +1,6 @@
 
 import { AuthorIntro } from 'components/AuthorIntro';
 import { CardItem } from 'components/CardItem';
-import { CardListItem } from 'components/CardListItem';
 import PageLayout from 'components/PageLayout';
 //import functions
 import { getBlogs } from 'lib/api';
@@ -13,15 +12,19 @@ export default function index({Blogs}){
     <PageLayout>
     <AuthorIntro />
     <hr/>
-    {/* displaying json data as a string */}
-    {JSON.stringify(Blogs)}
     <Row className="mb-5">
-        <Col md="10">
+        {/* <Col md="10">
           <CardListItem />
+        </Col> */}
+        { Blogs.map(blog =>
+        <Col key={blog.CurrentSlugs} md="4">
+          <CardItem
+          title={blog.title}
+          subtitle={blog.subtitle}
+          />
         </Col>
-        <Col md="4">
-          <CardItem />
-        </Col>
+        )
+        }
       </Row>
 </PageLayout>
   )
