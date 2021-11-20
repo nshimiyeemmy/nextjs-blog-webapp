@@ -1,0 +1,13 @@
+
+/* 
+Static pages are faster & can be cached using CDN(Content Delivery Network)
+Static pages are created at the build time
+And for Static page when we are making the request we are always recieving the same html document
+
+*/
+
+/*
+Dynamic pages 
+These kind of pages are created at the request time(through fetching data from the server)
+These are a little bit slower, and the time & speed depends on the data you are fetching from the server
+*/
