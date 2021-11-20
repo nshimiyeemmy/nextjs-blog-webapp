@@ -21,6 +21,8 @@ export default function index({Blogs}){
           <CardItem
           title={blog.title}
           subtitle={blog.subtitle}
+          date={blog.date}
+          image={blog.coverImage}
           />
         </Col>
         )
