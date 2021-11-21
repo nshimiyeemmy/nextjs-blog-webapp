@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
-    font-family: Nunito, sans-serif;
+    // font-family: Nunito, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 14px;
     font-weight: 300;
@@ -145,6 +146,10 @@ html, body {
         text-transform: capitalize;
         letter-spacing: 1px;
         font-weight: bold;
+        a{
+          // color: black;
+          font-weight: 900;
+        }
       }
         &-brand a{
             text-decoration: none;
